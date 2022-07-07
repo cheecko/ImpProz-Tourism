@@ -63,6 +63,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/hotels/berlin/rooms', require('./routes/rooms'))
+app.use('/v2/hotels/', require('./routes/v2/hotels'))
 
 //http://localhost:5000/  or just localhost:5000
 const port = process.env.PORT || 5000
